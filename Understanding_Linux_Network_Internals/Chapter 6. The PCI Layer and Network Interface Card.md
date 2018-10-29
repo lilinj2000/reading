@@ -1,0 +1,21 @@
+Chapter 6. The PCI Layer and Network Interface Card
+
+- 6.1 Data Sturctures Featured in This Chapter
+  - pci_device_id
+  - pci_dev
+  - pci_driver
+    - char *name : name of the driver
+    - const struct pci_device_id *id_table
+    - int (*probe)(struct pci_dev *dev, const struct pci_device_id *id)
+    - void (*remove)(struct pci_dev *dev)
+    - int (*suspend)(struct pci_dev *dev, pm_message_t state)
+    - int (*resume)(struct pci_dev *dev)
+    - int (*enable_wake)(struct pci_dev *dev, u32 state, int enable)
+    - struct pci_dynids dynids
+- 6.2 Registering a PCI NIC Device Driver
+- 6.3 Power Management and Wake-on-LAN
+- 6.4 Example of PCI NIC Driver Registration
+- 6.5 The Big Picture
+- 6.6 Tuning via /proc Filesystem
+- 6.7 Functions and Variables Featured in This Chapter
+- 6.8 Files and Directories Featured in This Chapter

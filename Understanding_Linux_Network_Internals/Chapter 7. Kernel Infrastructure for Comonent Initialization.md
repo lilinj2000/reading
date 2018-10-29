@@ -1,0 +1,28 @@
+Chapter 7. Kernel Infrastructure for Comonent Initialization
+
+- 7.1 Boot-Time kernel Options
+  - 7.1.1 Registering a Keyword
+  - 7.1.2 Two-Pass Parsing
+  - 7.1.3 .init.setup Memory Section
+  - 7.1.4 Use of Boot Options to Configure Network Devices
+- 7.2 Module Initialization Code
+  - 7.2.1 Old Model: Conditional Code
+  - 7.2.2 New Model: Macro-Based Tagging
+- 7.3 Optimized Macro-Based Tagging
+  - 7.3.1 Initialization Macros for Device Initialization Routines
+- 7.4 Boot-Time Initialization Routines
+  - 7.4.1 xxx_initcall Macros
+    - 7.4.1.1 Example of __initcall and __exitcall routines: modules
+    - 7.4.1.2 Example of dependency between initialization routines
+    - 7.4.1.3 Legacy code
+- 7.5 Memory Optimizations
+  - 7.5.1 \_\_init and \_\_exit Macros
+  - 7.5.2 xxx_initcall and \_\_exitcall Sections
+  - 7.5.3 Other Optimizations
+    - \_\_devinit
+    - \_\_devexit
+    - \_\_devinitdata
+  - 7.5.4 Dynamic Macros' Definition
+- 7.6 Tuning via /proc Filesystem
+- 7.7 Functions and Variables Featured in This Chapter
+- 7.8 Files and Directories Featured in This Chapter
