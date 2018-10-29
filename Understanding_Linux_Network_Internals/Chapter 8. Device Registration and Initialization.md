@@ -12,7 +12,7 @@ Chapter 8. Device Registration and Initialization
     - Setup routine
  - 8.4 Skeleton of NIC Registration and Unregistration
 
-![understandlni_0801](.\pic\understandlni_0801.jpg "Figure 8-1. (a) Device registration model; (b) device unregistration model")
+![understandlni_0801](./pic/understandlni_0801.jpg "Figure 8-1. (a) Device registration model; (b) device unregistration model")
 
 * 8.5 Device Initialization
 
@@ -50,8 +50,8 @@ Chapter 8. Device Registration and Initialization
   * 8.5.3 Optional Initializations and Special Cases
 
 * 8.6 Organization of net_device Structures
-  ![understandlni_0802](.\pic\understandlni_0802.jpg)
-  ![understandlni_0803](.\pic\understandlni_0803.jpg)
+  ![understandlni_0802](./pic/understandlni_0802.jpg)
+  ![understandlni_0803](./pic/understandlni_0803.jpg)
 
   * 8.6.1 Lookups
 
@@ -75,11 +75,11 @@ Chapter 8. Device Registration and Initialization
 
 * 8.8 Registering and Unregistering Devices
 
-  ![understandlni_0804](.\pic\understandlni_0804.jpg)
+  ![understandlni_0804](./pic/understandlni_0804.jpg)
 
   * 8.8.1 Split Operations: netdev_run_todo
 
-    ![understandlni_0805](.\pic\understandlni_0805.jpg)
+    ![understandlni_0805](./pic/understandlni_0805.jpg)
 
   * 8.8.2 Device Registration Status Notification
 
