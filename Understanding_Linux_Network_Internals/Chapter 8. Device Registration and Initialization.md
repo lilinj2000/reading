@@ -12,7 +12,7 @@ Chapter 8. Device Registration and Initialization
     - Setup routine
  - 8.4 Skeleton of NIC Registration and Unregistration
 
-![understandlni_0801](./pic/understandlni_0801.jpg "Figure 8-1. (a) Device registration model; (b) device unregistration model")
+	![understandlni_0801](./pic/understandlni_0801.jpg "Figure 8-1. (a) Device registration model; (b) device unregistration model")
 
 * 8.5 Device Initialization
 
@@ -95,3 +95,65 @@ Chapter 8. Device Registration and Initialization
       * NETDEV_CHANGE
     * 8.8.2.2 RTnetlink link notifications
       * multicast group RTMGRP_LINK with rtmsg_ifinfo
+
+* 8.9 Device Registration
+
+  * 8.9.1 register_netdevice Function
+
+* 8.10 Device Unregistration
+
+  * 8.10.1 unregister_netdevice Function
+
+  * 8.10.2 Reference Counts
+
+    * 8.10.2.1 Function netdev_wait_allrefs
+
+      ![understandlni_0806](./pic/understandlni_0806.jpg)
+
+* 8.11 Enabling and Disabling a Network Device
+
+* 8.12 Updating the Device Queuing Discipline State
+
+  * 8.12.1 Interactions with Power Management
+
+    * 8.12.1.1 Suspending a device
+    * 8.12.1.2 Resuming a device
+
+  * 8.12.2 Link State Change Detection
+
+    > netif_carrier_on
+
+    > netif_carrier_off
+
+    * 8.12.2.1 Scheduling and processing link state change events
+
+      ![understandlni_0807](./pic/understandlni_0807.jpg)
+      * 8.12.2.2 Linkwatch flags
+        * LW_RUNNING
+        * LW_SE_USED
+
+  * 8.13 Configuring Device-Related Information from User Space
+
+    ![understandlni_0808](./pic/understandlni_0808.jpg)
+
+  * 8.13.1 Ethtool
+    * 8.13.1.1 Drivers that do not support ethtool
+  * 8.13.2 Media Independent Interface (MII)
+
+* 8.14 Virtual Devices
+
+  * Bonding
+  * VLAN interfaces
+
+  ![understandlni_0809](./pic/understandlni_0809.jpg)
+
+* 8.15 Locking
+  * dev_base_list lock
+  * Routing Netlink semaphore (rtnl_sem)
+  * ingress_lock
+  * queue_lock
+  * xmit_lock
+  * xmit_lock_owner
+* 8.16 Tuning via /proc Filesystem
+* 8.17 Funtions and Variables Featured in This Chapter
+* 8.18 Files and Directions Featured in This Chapter
